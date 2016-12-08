@@ -1,0 +1,40 @@
+# sample query
+query ($user_id: String!, $date: String!) {
+  rebecca: summaries(user_id: $user_id, date: $date) {
+    record_id
+    created_at
+    updated_at
+    source { type device { name type } }
+    timestamp(standard: utc) {
+      user_offset
+      time
+      type
+    }
+    metrics {
+      steps {
+        id
+        value
+        origin
+        unit
+      }
+      spo2 {
+        id
+        value
+        origin
+        unit
+      }
+      distance(unit_type: meter) {
+        id
+        value
+        origin
+        unit
+      }
+    }
+  }
+}
+
+# Query Variables
+{
+  "user_id": "user_id_10",
+  "date": "2016-11-25"
+}

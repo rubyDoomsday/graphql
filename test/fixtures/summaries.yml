@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-12-05
+  category: MyString
+  customer_id: MyString
+  user_id: MyString
+  uid: MyString
+  origin: MyString
+  source: MyString
+  device_type: MyString
+  device_name: MyString
+  created_at: 2016-12-05 14:44:32
+
+two:
+  date: 2016-12-05
+  category: MyString
+  customer_id: MyString
+  user_id: MyString
+  uid: MyString
+  origin: MyString
+  source: MyString
+  device_type: MyString
+  device_name: MyString
+  created_at: 2016-12-05 14:44:32
